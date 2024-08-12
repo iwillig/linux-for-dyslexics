@@ -1,7 +1,7 @@
 # Linux for Dyslexics
 
 This script is designed to transform a fresh Fedora Linux installation
-into a system that is dyslexia.
+into a system that is kind to people with dyslexia.
 
 This tool is based on the Gnome 3 Desktop and makes heavy use of the
 [OpenDyslexic](https://opendyslexic.org/) Font.
@@ -10,49 +10,54 @@ This project was inspired by [Omakub](https://omakub.org/)
 
 ## Packages
 
-1. fish shell
+This is a list of packages that I have found helpful.
+
+
+1. [Fish shell](https://fishshell.com/)
 
 ```shell
 # dnf install fish
 ```
 
-1. Aspell
+2. [GNU Aspell](http://aspell.net/)
 
 ```shell
 # sudo dnf install aspell aspell-en
 ```
 
-1. GNU Stow
+3. [GNU Stow](https://www.gnu.org/software/stow/)
 
 ```shell
 # dnf install stow
 ```
 
-1. nerd-fonts
+4. nerd-fonts
 
 ```shell
 # dnf copr enable che/nerd-fonts
 # dnf install nerd-fonts
 ```
 
-1. GNU Emacs
+5. [GNU Emacs](https://www.gnu.org/software/emacs/)
 
 ```shell
 # dnf install emacs
 ```
 
-1.  pipx
+6.  pipx
 
 ```
 # sudo dnf install pipx
 ```
 
-1. gnome-extensions-cli
+7. gnome-extensions-cli
 
 ```shell
 # pipx install gnome-extensions-cli --system-site-packages
 # sudo dnf install libgtop2-devel lm_sensors
 ```
+
+8. gnome-extensions-cli
 
 ```shell
 gext install tactile@lundal.io
@@ -70,19 +75,19 @@ gext install colortint@matt.serverus.co.ukn
 gext install gnomebedtime@ionutbortis.gmail.com
 ```
 
-1. Themes
+9. Themes
 
 ```shell
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 ```
 
-1. Speech to text
+10. Speech to text
 
 ```shell
 flatpak install flathub net.mkiol.SpeechNote
 ```
 
-1. Disable animations
+11. Disable animations
 
 ```shell
 gsettings set org.gnome.desktop.interface enable-animations false
@@ -91,7 +96,7 @@ gsettings set org.gnome.desktop.interface enable-animations false
 ## Common command lines tools
 
 ```shell
-fzf ripgrep bat eza zoxide plocate btop apache2-utils fd-find tldr
+# sudo dnf install fzf ripgrep bat eza zoxide plocate btop apache2-utils fd-find tldr
 ```
 
 ## List all of the user install packages
